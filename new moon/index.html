@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>First sight</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">First sight</a>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">login</a></li>
+      <li><a href="#">signup</a></li>
+
+
+    </ul>
+  </header>
+
+  <section>
+    <img src="images/stars.png" id="stars">
+    <img src="images/moon.png" id="heart">
+    <img src="images/back.png" id="back">
+    <h2 id="text">Moon Light</h2>
+    <a href="#sec" id="btn">Explore</a>
+    <img src="images/front.png" id="front" alt="">
+  </section>
+
+  <div class="sec" id="sec">
+    <h2>FIRST SIGHT INSIGHTS</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa id neque aliquam vestibulum morbi blandit cursus. Vel fringilla est ullamcorper eget nulla facilisi etiam.
+      Aliquam sem et tortor consequat id porta nibh. At volutpat diam ut venenatis tellus in metus. Nec tincidunt praesent semper feugiat. Massa eget egestas purus viverra accumsan in nisl nisi scelerisque. Augue neque gravida in fermentum et.
+      Accumsan in nisl nisi scelerisque. Mollis aliquam ut porttitor leo a. Sed vulputate odio ut enim blandit volutpat. <br><br>
+
+      Risus nullam eget felis eget nunc lobortis. Vulputate sapien nec sagittis aliquam malesuada bibendum. Placerat orci nulla pellentesque dignissim enim. Et egestas quis ipsum suspendisse ultrices gravida. Mauris ultrices eros in cursus turpis
+      massa tincidunt. Ac felis donec et odio pellentesque diam. Ornare quam viverra orci sagittis. Scelerisque in dictum non consectetur a erat nam at lectus. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Purus in massa tempor nec.
+      Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue. Morbi non arcu risus quis varius quam. Eu augue ut lectus arcu bibendum at varius.<br><br>
+
+      Adipiscing elit ut aliquam purus sit amet. Natoque penatibus et magnis dis parturient montes. Velit egestas dui id ornare arcu. Massa vitae tortor condimentum lacinia. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing. Eget
+      egestas purus viverra accumsan in. Et malesuada fames ac turpis egestas. Laoreet id donec ultrices tincidunt arcu non sodales neque. Eu augue ut lectus arcu bibendum at varius. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque
+      mauris. Proin libero nunc consequat interdum varius sit. In est ante in nibh mauris cursus mattis. Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Fermentum posuere
+      urna nec tincidunt praesent. Ac felis donec et odio pellentesque diam volutpat commodo. Nisl vel pretium lectus quam id leo. Arcu dictum varius duis at. Non odio euismod lacinia at quis risus sed. <br><br>
+
+      Rhoncus dolor purus non enim praesent elementum facilisis leo. Interdum velit euismod in pellentesque massa. Blandit libero volutpat sed cras. Aliquam vestibulum morbi blandit cursus risus. Fermentum leo vel orci porta non pulvinar neque. Dui
+      nunc mattis enim ut tellus elementum sagittis vitae. Felis eget nunc lobortis mattis. Diam vulputate ut pharetra sit. Facilisis gravida neque convallis a cras. Etiam dignissim diam quis enim lobortis scelerisque. Et ligula ullamcorper malesuada
+      proin.</p>
+  </div>
+
+  <script>
+    let stars = document.getElementById('stars');
+    let heart = document.getElementById('heart');
+    let back = document.getElementById('back');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let front = document.getElementById('front');
+    let header = document.querySelector('header');
+
+
+    window.addEventListener('scroll', function(){
+      let value = window.scrollY;
+      stars.style.left = value * 0.25 + 'px';
+      heart.style.top = value * 1.05 + 'px';
+      back.style.top = value * 0.5 + 'px';
+      front.style.top = value * 0 + 'px';
+      text.style.marginRight = value * 4 + 'px';
+      btn.style.marginTop = value * 1.5 + 'px';
+      header.style.top = value * 0.5 + 'px';
+    })
+  </script>
+</body>
+
+</html>
